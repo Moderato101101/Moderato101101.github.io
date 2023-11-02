@@ -98,7 +98,7 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="project_anti-roach" startnode="1" creator="Twine" creator-version="2.7.0" format="SugarCube" format-version="2.36.1" ifid="3E28F3DC-F3BC-42EB-B274-4DFBC74D6ED0" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body{
+	<tw-storydata name="project_anti-roach" startnode="1" creator="Twine" creator-version="2.7.0" format="SugarCube" format-version="2.36.1" ifid="3E28F3DC-F3BC-42EB-B274-4DFBC74D6ED0" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body{
   font-size:120%
 }
 
@@ -349,7 +349,8 @@ $money 元  &lt;&lt;print $hour.toString().padStart(2, &#39;0&#39;)&gt;&gt;:&lt;
 	&lt;&lt;set $minute += 10&gt;&gt;
 	&lt;&lt;goto &quot;蟑難平原隨機事件&quot;&gt;&gt;
     &lt;&lt;set $PlaneEvent to random(1,3)&gt;&gt;
-&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="33" name="蟑難平原隨機事件" tags="" position="1000,1300" size="100,100">&lt;&lt;if $PlaneEvent is 1&gt;&gt;\
+&lt;&lt;/link&gt;&gt;
+[[回到Nocroach村(00:20)|鬆餅屋門口][$minute+= 20]]</tw-passagedata><tw-passagedata pid="33" name="蟑難平原隨機事件" tags="" position="1000,1300" size="100,100">&lt;&lt;if $PlaneEvent is 1&gt;&gt;\
 你在腳邊發現了一些小蟑螂。
 
 [[戰鬥]]
